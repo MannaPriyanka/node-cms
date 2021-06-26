@@ -1,5 +1,5 @@
 module.exports = {
-    mongodbUrl : 'mongodb+srv://Demo:demo@cluster0.2fn8e.mongodb.net/node_cms?retryWrites=true&w=majority',
+    mongodbUrl : 'mongodb://localhost:27017/node_cms',
     PORT: process.env.PORT || 3000,
     globalvariables:(req,res,next)=>{
         res.locals.success_message = req.flash('success-message');
